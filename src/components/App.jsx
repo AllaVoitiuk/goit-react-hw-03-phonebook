@@ -27,9 +27,6 @@ if (this.state.contacts !== prevState.contacts) {
 }
   };
 
-  // componentWillUnmount(){
-  //   console.log('App componentWillUnmount')
-  // }
 
   findDubleContact = name => {
     const dubleContact = this.state.contacts.find(
@@ -50,7 +47,7 @@ if (this.state.contacts !== prevState.contacts) {
     };
 
     if (this.findDubleContact(name)) {
-      // this.setState({ name: ''});
+   
       alert(`${name} is already in contacts`);
       
       return false;
@@ -118,19 +115,3 @@ if (this.state.contacts !== prevState.contacts) {
   }
 }
 
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101'
-//       }}
-//     >
-//       React homework template
-//     </div>
-//   );
-// };
